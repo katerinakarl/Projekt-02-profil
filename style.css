@@ -3,6 +3,8 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
 /*
 BARVY
 czechitas                 #b92e81
@@ -14,8 +16,100 @@ tlačítko facebook         #3b5998
 tlačítko twitter          #1da1f2
 */
 
-
 body {
   background-color: #bdc3c7;
 }
+
+.profil
+
+.hlavička {
+  position: relative;
+}
+
+.foto {
+  position: relative;
+  top:0;
+  left:0;
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+  top:230px;
+  left:300px;
+  background-color: #b92e81;
+  box-shadow: 5px 5px 10px black;
+  
+  
+}
+
+.obsah {
+  background-color: #31363b;
+  width: 400px;
+  padding: 60px;
+  text-align:left;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  line-height: 25px;
+  margin-top: -4px;
+}
+
+.jmeno {
+text-align:left;
+font-family: 'Source Sans Pro', sans-serif;
+color: white;
+}
+
+.odkazy{
+background-color: #31363b;
+margin-top: 0;
+padding: 10px;
+list-style-type: none;
+font-family: 'Source Sans Pro', sans-serif;
+font-weight:bold;
+width: 400px;
+color: white;
+display: inline-grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+justify-items:center;
+border: 1px solid #bdc3c7; 
+justify-content: space-between;
+  }
+
+.portfolio {
+font-family: 'Source Sans Pro', sans-serif;
+text-transform: uppercase;
+text-align:center;
+grid-column:2 / 2;
+padding:10px;
+align-self: center;
+}
+
+.facebook {
+font-family: 'Source Sans Pro', sans-serif;
+text-transform: uppercase;
+grid-column:1 / 2;
+padding:10px;
+align-self: center;
+}
+
+.twitter{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  grid-column:3 / 3;
+  padding:10px;
+  align-self: center;
+  }
+
+  a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none}
+
+  .portfolio:hover {background-color:#e74c3c;box-shadow: 5px 5px 10px black }
+  .facebook:hover {background-color:#3b5998; box-shadow: 5px 5px 10px black }
+  .twitter:hover {background-color:#1da1f2;box-shadow: 5px 5px 10px black }
+
+
 
